@@ -1,9 +1,9 @@
 #/bin/bash
 #for loop function
-file = `ls -lh /home/sixthstar/`
+file=$(ls -lh /home/sixthstar/)
 if [ -d /home/sixthstar/ ]
 then 
-		echo "$file"
+		echo "`ls -lh $file`"
 	
 else 
 		echo "no directory found"
